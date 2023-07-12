@@ -26,22 +26,25 @@ jobs:
     docker:
       - image: circleci/node:13.8.0
     steps:
+      - checkout
       - run:
-          name: "hello"
+          name: "print the work hello"
           command: "echo hello"
   print_world:
     docker:
       - image: circleci/node:13.8.0
     steps:
+      - checkout
       - run:
-          name: "world"
+          name: "print the word world"
           command: "echo world"
   print_name:
     docker:
       - image: circleci/node:13.8.0
     steps:
+      - checkout
       - run:
-          name: "my_name"
+          name: "print environment variable my_name"
           command: echo ${my_name}
 
 # Orchestrate jobs using workflows
