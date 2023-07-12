@@ -26,7 +26,6 @@ jobs:
     docker:
       - image: circleci/node:13.8.0
     steps:
-      - checkout
       - run:
           name: "hello"
           command: "echo hello"
@@ -34,7 +33,6 @@ jobs:
     docker:
       - image: circleci/node:13.8.0
     steps:
-      - checkout
       - run:
           name: "world"
           command: "echo world"
@@ -42,7 +40,6 @@ jobs:
     docker:
       - image: circleci/node:13.8.0
     steps:
-      - checkout
       - run:
           name: "my_name"
           command: echo ${my_name}
