@@ -2,7 +2,7 @@
 # See: https://circleci.com/docs/configuration-reference
 version: 2.1
 command:
-  print_pipline_id:
+  print_pipeline_id:
     steps:
       - echo $CIRCLE_WORKFLOW_ID
 jobs:
