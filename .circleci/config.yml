@@ -16,4 +16,4 @@ jobs:
 workflows:
   my_workflow:
     jobs:
-      - print_pipeline_id
+      - print_command
